@@ -2,7 +2,7 @@ package main;
 
 import java.util.Scanner;
 
-public class Score3_8 {
+public class Java3_8 {
 
 	public static void main(String[] args) {
 
