@@ -10,10 +10,14 @@ public class Java4_12 {
 
 		Scanner scan = new Scanner(System.in);
 		int i = scan.nextInt();
-
+		int n = scan.nextInt();
+		int m = 0;
 		scan.close();
-		while(i <= 100) {
-			System.out.println("合計" + i);
+
+		while(m <= 100) {
+			m = i + n;
+
+			System.out.println("合計" + m);
 			break;
 		}
 	}
