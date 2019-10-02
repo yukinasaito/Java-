@@ -9,13 +9,16 @@ public class Java5_6 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		int kuku[][] = new int[9][];
+		int kuku[][] = new int[9][9];
 
-		// 配列 kuku に値を代入する
+		//配列に保存
 		for(int i = 0; i < 9; i++) {
-			kuku[i] = new int[9];
+			for(int j = 0; j < 9; j++) {
+				kuku[i][j] = (i + 1) * (j + 1);
+			}
 		}
 
+		//結果を表示
 		for(int i = 0; i < 9; i++) {
 			for(int j = 0; j < 9; j++)
 				System.out.printf(" %2d", kuku[i][j]);
