@@ -1,25 +1,21 @@
 
 package main;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Java4_12 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		System.out.println("数値入力：");
+		int x = 0;
 
-		Scanner scan = new Scanner(System.in);
-		int i = scan.nextInt();
-		int n = scan.nextInt();
-		int m = 0;
-		scan.close();
+		System.out.println("数値入力");
+		while(x <= 100)
+			x += Integer.parseInt(br.readLine());
 
-		while(m <= 100) {
-			m = i + n;
-
-			System.out.println("合計" + m);
-			break;
-		}
+		System.out.println("合計は" + x);
 	}
 }

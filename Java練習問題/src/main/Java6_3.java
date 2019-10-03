@@ -8,21 +8,22 @@ public class Java6_3 {
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int i = 5;
-		int n = 9;
+
+		System.out.println("数値入力");
+
+		int i;
+		int n;
 
 		//数値入力
 		int x = Integer.parseInt(br.readLine());
 		int y = Integer.parseInt(br.readLine());
 		int z = Integer.parseInt(br.readLine());
 
-		System.out.println();
+		System.out.println(max(z, max(x, y)) + "が一番大きい");
 
-		int max = Math.max(i, n);
-		System.out.println(max + "が大きい");
 	}
 
-	static int max(int i, int n) {
+	public static int max(int i, int n) {
 		if(i > n)
 			return i;
 		else
